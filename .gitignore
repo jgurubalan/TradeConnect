@@ -1,1 +1,28 @@
-ZEROConnect/.env
+cat > .gitignore <<'EOF'
+# Environment / secrets
+.env
+*.env
+
+# Python virtual environments
+.venv/
+.venv_*/
+venv/
+env/
+
+# Python cache / compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS
+.DS_Store
+
+# IDE / editor
+.vscode/
+.idea/
+
+# ZeroConnect / authentication secrets
+ZEROConnect/access_token.txt
+ZEROConnect/info.txt
+ZEROConnect/reference.txt
+EOF
